@@ -9,6 +9,7 @@
 #include <AggregateFunctions/QuantileExactWeighted.h>
 #include <AggregateFunctions/QuantileTiming.h>
 #include <AggregateFunctions/QuantileTDigest.h>
+#include <AggregateFunctions/QuantileBDigest.h>
 
 #include <AggregateFunctions/IAggregateFunction.h>
 #include <AggregateFunctions/QuantilesCommon.h>
@@ -219,5 +220,22 @@ struct NameQuantileTDigest { static constexpr auto name = "quantileTDigest"; };
 struct NameQuantileTDigestWeighted { static constexpr auto name = "quantileTDigestWeighted"; };
 struct NameQuantilesTDigest { static constexpr auto name = "quantilesTDigest"; };
 struct NameQuantilesTDigestWeighted { static constexpr auto name = "quantilesTDigestWeighted"; };
+
+struct NameQuantileBDigest  { static constexpr auto name = "quantileBDigest"; };
+struct NameQuantileBDigest1 { static constexpr auto name = "quantileBDigest1"; };
+struct NameQuantileBDigest2 { static constexpr auto name = "quantileBDigest2"; };
+struct NameQuantileBDigest5 { static constexpr auto name = "quantileBDigest5"; };
+struct NameQuantileBDigestWeighted  { static constexpr auto name = "quantileBDigestWeighted"; };
+struct NameQuantileBDigestWeighted1 { static constexpr auto name = "quantileBDigestWeighted1"; };
+struct NameQuantileBDigestWeighted2 { static constexpr auto name = "quantileBDigestWeighted2"; };
+struct NameQuantileBDigestWeighted5 { static constexpr auto name = "quantileBDigestWeighted5"; };
+struct NameQuantilesBDigest  { static constexpr auto name = "quantilesBDigest"; };
+struct NameQuantilesBDigest1 { static constexpr auto name = "quantilesBDigest1"; };
+struct NameQuantilesBDigest2 { static constexpr auto name = "quantilesBDigest2"; };
+struct NameQuantilesBDigest5 { static constexpr auto name = "quantilesBDigest5"; };
+struct NameQuantilesBDigestWeighted  { static constexpr auto name = "quantilesBDigestWeighted"; };
+struct NameQuantilesBDigestWeighted1 { static constexpr auto name = "quantilesBDigestWeighted1"; };
+struct NameQuantilesBDigestWeighted2 { static constexpr auto name = "quantilesBDigestWeighted2"; };
+struct NameQuantilesBDigestWeighted5 { static constexpr auto name = "quantilesBDigestWeighted5"; };
 
 }
